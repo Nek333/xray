@@ -36,7 +36,7 @@
         "security": "reality",
         "realitySettings": {
           "show": false,
-          "dest": "'$website'",
+          "dest": "'$website':443",
           "xver": 0,
           "serverNames": [
             "'$website'"
