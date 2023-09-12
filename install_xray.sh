@@ -8,5 +8,5 @@ output=$(sudo ./xray/xray x25519)
 private_key=$(echo "$output" | awk '/Private key:/ {print $NF}')
 public_key=$(echo "$output" | awk '/Public key:/ {print $NF}')
 sudo read -p "Введите сайт для маскировки, в виде www.microsoft.com: " website
-sudo systemctl restart xrayy
+sudo systemctl restart xray
 
