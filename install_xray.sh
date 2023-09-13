@@ -27,7 +27,7 @@ cat <<EOL > /root/xray/temp_config.json
       "protocol": "shadowsocks",
       "settings": {
         "method": "2022-blake3-aes-128-gcm",
-        "password": "aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbb",
+        "password": "qweqweqweqeqweqe",
         "network": "tcp,udp"
       }
     },
@@ -60,7 +60,7 @@ cat <<EOL > /root/xray/temp_config.json
           "maxClientVer": "",
           "maxTimeDiff": 0,
           "shortIds": [
-            "aabbccdd"
+            "qwe123"
           ]
         }
       },
