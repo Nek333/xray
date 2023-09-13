@@ -60,7 +60,7 @@ cat <<EOL > /root/xray/temp_config.json
           "maxClientVer": "",
           "maxTimeDiff": 0,
           "shortIds": [
-            "qwe123"
+            "aabbccdd"
           ]
         }
       },
