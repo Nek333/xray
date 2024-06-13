@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo wget https://github.com/XTLS/Xray-core/releases/download/v1.8.1/Xray-linux-64.zip
+sudo apt install unzip
 sudo unzip ./Xray-linux-64.zip -d ./xray
 sudo chmod +x ./xray
 sudo cp ./xray/xray.service /usr/lib/systemd/system/xray.service
