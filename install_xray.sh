@@ -12,7 +12,7 @@ public_key=$(echo "$output" | awk '/Public key:/ {print $NF}')
 read -p "Введите сайт для маскировки, в виде www.microsoft.com: " website
 
 # Создаем временный файл конфигурации
-cat <<EOL > /root/xray/temp_config.json
+cat <<EOL > /home/nek33/xray/temp_config.json
 {
   "log": {
     "loglevel": "info"
