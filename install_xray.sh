@@ -5,8 +5,8 @@ sudo unzip ./Xray-linux-64.zip -d ./xray
 sudo chmod +x ./xray
 sudo cp ./xray/xray.service /usr/lib/systemd/system/xray.service
 sudo systemctl enable xray
-uuid=$(sudo /root/xray/xray uuid)
-output=$(sudo /root/xray/xray x25519)
+uuid=$(sudo /home/nek33/xray/xray uuid)
+output=$(sudo /home/nek33/xray/xray x25519)
 private_key=$(echo "$output" | awk '/Private key:/ {print $NF}')
 public_key=$(echo "$output" | awk '/Public key:/ {print $NF}')
 read -p "Введите сайт для маскировки, в виде www.microsoft.com: " website
@@ -88,7 +88,7 @@ cat <<EOL > /root/xray/temp_config.json
 EOL
 
 # Заменяем конфигурационный файл
-mv /root/xray/temp_config.json /root/xray/config.json
+mv /home/nek33/xray/temp_config.json /home/nek33/xray/config.json
 
 sudo systemctl restart xray
 echo "Скопируйте публичный ключ: $public_key"
