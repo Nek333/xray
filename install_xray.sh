@@ -92,5 +92,5 @@ mv /root/xray/temp_config.json /root/xray/config.json
 
 sudo systemctl restart xray
 echo "Скопируйте публичный ключ: $public_key"
-echo "Скопируйте ID: $uuid"
+echo "Скопируйте uuid: $uuid"
 
